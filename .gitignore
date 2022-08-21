@@ -1,3 +1,14 @@
+# ignore preparation
+dataset/
+pretrain/
+
+# ignore weight and log
+models/
+*.pth
+log/
+
+.empty/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
