@@ -17,8 +17,8 @@ In this work, I implied semantic segmentation model `UNet`, `Unet++` and `EMANet
 **[EVALUATION]** **BIOU** [paper](https://arxiv.org/abs/2103.16562)
 
 <div align=center>
-    <img src="./assets/unet.png", width=40%>
-    <img src="./assets/unetpp.png", width=44%>
+    <img src="./assets/unet.png", width=46%>
+    <img src="./assets/unetpp.png", width=50.6%>
     <br>Unet & Unet++
 </div>
 
@@ -41,16 +41,20 @@ pip -r requirements.txt
 Prepare your data as below: 
 
 ````
-dataset
-├──── Training_set
-│    ├──── alpha (431 images)
-│    ├──── fg (431 images)
-│    └──── merged (43100 images)
-├──── Test_set
-│    ├──── alpha (50 images)
-│    ├──── fg (50 images)
-│    ├──── merged (1000 images)
-│    └──── trimaps (1000 images)
+dataset 
+└──── weizmann_horse_db
+  ├──── horse 
+  │ ├──── horse001.png 
+  │ ├──── horse002.png 
+  │ ├──── horse003.png
+  │ ├──── ... 
+  │ └──── horse327.png 
+  └──── mask 
+    ├──── horse001.png 
+    ├──── horse002.png 
+    ├──── horse003.png
+    ├──── ... 
+    └──── horse327.png
 ````
 
 ## Training and Testing
@@ -95,7 +99,7 @@ BIOU:
 | UNet++  | 0.22     | 9.56     | 0.69      |
 | EMANet  | 0.20     | 0.42     | 0.46      |
 
-* The results are shown in detail in my [report](). I didn't achieve perfect performance on EMANet, and the analyze was also mentioned in the report. 
+* The results are shown in detail in my [report](./assets/report.pdf). I didn't achieve perfect performance on EMANet, and the analyze was also mentioned in the report. 
 
 * My weight of models was saved in my [suppliement material](). I saved the weight every 50 epochs, as well as the weight of best model. 
 

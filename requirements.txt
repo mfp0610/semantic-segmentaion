@@ -1,0 +1,6 @@
+matplotlib==3.5.3
+numpy==1.21.2
+Pillow==9.2.0
+tensorboardX==2.5.1
+torch==1.12.1
+torchvision==0.13.1
