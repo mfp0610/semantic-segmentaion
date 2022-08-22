@@ -6,15 +6,15 @@
 
 In this work, I implied semantic segmentation model `UNet`, `Unet++` and `EMANet` on Weizmann Horse Dataset, acheiving the target `MIOU` and `BIOU` in part of the experiments. 
 
-**UNet** [paper](https://arxiv.org/abs/1505.04597) (no officlial code)
+**UNet** [[paper]](https://arxiv.org/abs/1505.04597) (no officlial code)
 
-**UNet++** [paper](https://arxiv.org/abs/1807.10165) [code](https://github.com/MrGiovanni/UNetPlusPlus)
+**UNet++** [[paper]](https://arxiv.org/abs/1807.10165) [[code]](https://github.com/MrGiovanni/UNetPlusPlus)
 
-**EMANet** [paper](https://ieeexplore.ieee.org/document/9009057) [code](https://github.com/XiaLiPKU/EMANet)
+**EMANet** [[paper]](https://ieeexplore.ieee.org/document/9009057) [[code]](https://github.com/XiaLiPKU/EMANet)
 
-**[DATASET]** **Weizmann Horse** [Kaggle](https://www.kaggle.com/datasets/ztaihong/weizmann-horse-database) 
+**[DATASET]** **Weizmann Horse** [[Kaggle]](https://www.kaggle.com/datasets/ztaihong/weizmann-horse-database) 
 
-**[EVALUATION]** **BIOU** [paper](https://arxiv.org/abs/2103.16562)
+**[EVALUATION]** **BIOU** [[paper]](https://arxiv.org/abs/2103.16562)
 
 <div align=center>
     <img src="./assets/unet.png", width=46%>
@@ -38,23 +38,23 @@ pip -r requirements.txt
     
 ## Data Preparation
 
-Prepare your data as below: 
+Prepare your dataset as below: 
 
 ````
 dataset 
-└──── weizmann_horse_db
-  ├──── horse 
-  │ ├──── horse001.png 
-  │ ├──── horse002.png 
-  │ ├──── horse003.png
-  │ ├──── ... 
-  │ └──── horse327.png 
-  └──── mask 
-    ├──── horse001.png 
-    ├──── horse002.png 
-    ├──── horse003.png
-    ├──── ... 
-    └──── horse327.png
+  └──── weizmann_horse_db
+    ├──── horse 
+    │ ├──── horse001.png 
+    │ ├──── horse002.png 
+    │ ├──── horse003.png
+    │ ├──── ... 
+    │ └──── horse327.png 
+    └──── mask 
+      ├──── horse001.png 
+      ├──── horse002.png 
+      ├──── horse003.png
+      ├──── ... 
+      └──── horse327.png
 ````
 
 ## Training and Testing
@@ -86,7 +86,7 @@ The result is shown below :
 MIOU: 
 
 | Model   | 1 Epoch  | 20 Epoch | 200 Epoch |
-| ------- | -------- | -------- | --------- |
+| ------- | -------- | -------- | --------- | 
 | UNet    | 0.55     | **0.85** | **0.91**  |
 | UNet++  | 0.60     | 0.82     | 0.88      |
 | EMANet  | **0.62** | 0.76     | 0.78      |
@@ -99,13 +99,13 @@ BIOU:
 | UNet++  | 0.22     | 9.56     | 0.69      |
 | EMANet  | 0.20     | 0.42     | 0.46      |
 
-* The results are shown in detail in my [report](./assets/report.pdf). I didn't achieve perfect performance on EMANet, and the analyze was also mentioned in the report. 
+* The results are shown in detail in my [report (CN)](./assets/report.pdf). I didn't achieve perfect performance on EMANet, and the analyze was also mentioned in the report. 
 
-* My weight of models was saved in my [suppliement material](). I saved the weight every 50 epochs, as well as the weight of best model. 
+* My weight of models was saved in my [Google Drive](). I saved the weight every 50 epochs, as well as the weight of best model. 
 
-* My tensorboard events of the traing was also provided in saved in my [suppliement material](). You can review my training process.
+* My tensorboard events of the traing was also provided in saved in my [Google Drive](). You can review my training process.
 
-* [Suppliement Material (Google Drive)]()
+* [Google Drive]()
 
 
 ## Contract
