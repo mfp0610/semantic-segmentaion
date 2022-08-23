@@ -1,5 +1,5 @@
 # training configuration
-EPOCH = 200
+EPOCH = 250
 LR = 1e-3
 WEIGHT_DECAY = 0
 EPS = 1e-8

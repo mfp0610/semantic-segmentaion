@@ -1,8 +1,8 @@
 # training configuration
-EPOCH = 300
-LR = 9e-3
-WEIGHT_DECAY = 1e-4
-MOMENTUM = 0.9 #0.6
+EPOCH = 250
+LR = 1e-5
+WEIGHT_DECAY = 1e-8
+MOMENTUM = 0.9
 
 # directory
 LOG_DIR = './log/' 

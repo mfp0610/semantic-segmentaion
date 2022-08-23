@@ -9,7 +9,7 @@ from tensorboardX import SummaryWriter
 
 from DataLoader import WHDataset
 import DataLoader as DL
-import configuration.unetpp_config as settings
+import config.unetpp_config as settings
 from demo.UNetPP import UNETPP
 import demo.UNetPP as unetpp
 import evaluation as eva
@@ -81,7 +81,7 @@ if __name__ == "__main__":
         biou = sum(tbiou).item()/len(tbiou)
         
         # writer to tensorboardX
-        #writer.add_scalar('loss', tloss.item(), global_step = epoch)
+        writer.add_scalar('loss', iloss/ite_num4val, global_step = epoch)
         writer.add_scalar('miou', sum(tmiou).item()/len(tmiou), global_step = epoch)
         writer.add_scalar('biou', sum(tbiou).item()/len(tbiou), global_step = epoch)
     

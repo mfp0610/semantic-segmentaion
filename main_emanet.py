@@ -8,7 +8,7 @@ from tensorboardX import SummaryWriter
 
 from DataLoader import WHDataset
 import DataLoader as DL
-import configuration.emanet_config as settings
+import config.emanet_config as settings
 from demo.EMANet import EMANet
 import evaluation as eva
  

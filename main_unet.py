@@ -8,7 +8,7 @@ from tensorboardX import SummaryWriter
 
 from DataLoader import WHDataset
 import DataLoader as DL
-import configuration.unet_config as settings
+import config.unet_config as settings
 from demo.UNet import UNet
 import evaluation as eva
 
