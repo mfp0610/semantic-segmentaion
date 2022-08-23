@@ -97,7 +97,7 @@ BIOU:
 | UNet++  | 0.164     | 0.536     | 0.701     |
 | EMANet  | 0.198     | 0.459     | 0.493     |
 
-* `best` means the best performance in 250 epochs
+* `Best` means the best performance in 250 epochs
 
 * The results are shown in detail in my [report (CN)](./assets/report.pdf). I didn't achieve perfect performance on EMANet, and the analyze was also mentioned in the report. 
 
@@ -112,7 +112,7 @@ BIOU:
 
 Mail me at [HUST-Mail](fanpengmeng@hust.edu.cn) or [Gmail](fpmeng0610@gmail.com)
 
-## Citation
+## Reference
 
 The following works are appreciated for great credit to my work:
 
